@@ -1,14 +1,14 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Carousel, ContentWrapper, SwitchTabs } from "../../../components";
 import useFetch from "../../../hooks/useFetch";
 
 const Popular = () => {
-  const [endPoint, setEndPoint] = useState("movie");
+  const [endpoint, setEndpoint] = useState("movie");
 
-  const { data, loading } = useFetch(`/${endPoint}/popular`);
+  const { data, loading } = useFetch(`/${endpoint}/popular`);
 
   const onTabChange = (tab) => {
-    setEndPoint(tab === "Movies" ? "movie" : "tv");
+    setEndpoint(tab === "Movies" ? "movie" : "tv");
   };
 
   return (
@@ -17,7 +17,7 @@ const Popular = () => {
         <span className="carouselTitle">What's Popular</span>
         <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
       </ContentWrapper>
-      <Carousel data={data?.results} loading={loading} endPoint={endPoint} />
+      <Carousel data={data?.results} loading={loading} endpoint={endpoint} />
     </div>
   );
 };
