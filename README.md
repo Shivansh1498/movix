@@ -1,8 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Movix App
 
-Currently, two official plugins are available:
+This Movies and TV Series app is a dynamic web application built using ReactJS, offering a comprehensive platform to explore and discover your favorite movies and TV shows. It leverages The Movie Database (TMDb) API to fetch real-time data, providing users with an extensive catalog of entertainment content.
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search Functionality: Easily search for movies or TV series by title, genre, or keyword.
+- Filtering Options: Filter content based on release year, ratings, and genres to narrow down preferences.
+- Detailed Information: Access comprehensive details for each title, including synopsis, cast, crew, ratings, trailers, and more.
+- Responsive Design: Ensures seamless functionality and a pleasant user experience across devices.
+
+
+## Technologies Used
+
+- ReactJS: Front-end development library for building interactive user interfaces.
+- TMDb API: Integration with The Movie Database API to fetch movie and TV series data.
+- React Router: Navigation components for managing different views within the app.
+- SCSS styling: For styling and UI components to enhance the visual appeal.
+- Axios: Used for making HTTP requests to the API.
+
+
+## Installation
+
+- Clone this repository.
+- Install dependencies using `npm install`
+- Get your API key from TMDb and add it to the .env file.
+- Run the app using: `npm run dev`
